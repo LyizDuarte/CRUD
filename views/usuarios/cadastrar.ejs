@@ -1,0 +1,42 @@
+<script src="/js/usuarios/cadastrar.js"></script>
+
+<h1>Cadastrar novo usuario</h1>
+<div>
+  <form>
+    <div style="color: red" id="msgErro"></div>
+    <div>
+      <label for="inputNome">Nome</label>
+      <input type="text" class="form-control" id="inputNome" />
+    </div>
+
+    <div>
+      <label for="inputEmail">Email</label>
+      <input type="text" class="form-control" id="inputEmail" type="email" />
+    </div>
+
+    <label>Perfil</label>
+    <select class="form-control" id="selPerfil">
+      <option value="0">Selecione</option>
+      <option value="1">Administrador</option>
+      <option value="2">Visitante</option>
+    </select>
+
+    <div>
+      <label for="inputSenha">Senha</label>
+      <input class="form-control" type="password" id="inputSenha" />
+    </div>
+    <br />
+
+    <div>
+      <label><input type="checkbox" id="cbAtivo" /> Ativo</label>
+    </div>
+    <br />
+
+    <div>
+      <button type="button" class="btn btn-primary" id="btnCadastrar">
+        Cadastrar
+      </button>
+      <a class="btn btn-default" href="/usuarios">Voltar</a>
+    </div>
+  </form>
+</div>
